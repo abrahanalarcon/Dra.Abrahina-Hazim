@@ -1,0 +1,65 @@
+.section {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 100%);
+  color: var(--cream);
+  position: relative;
+  overflow: hidden;
+  padding: 7rem 0;
+}
+
+.glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  pointer-events: none;
+}
+.glow1 {
+  width: 480px; height: 480px;
+  background-color: var(--terracotta);
+  opacity: 0.25;
+  top: -150px; left: -150px;
+  animation: float-slow 16s ease-in-out infinite;
+}
+.glow2 {
+  width: 380px; height: 380px;
+  background-color: var(--blush);
+  opacity: 0.15;
+  bottom: -120px; right: -120px;
+  animation: float-slow 20s ease-in-out infinite reverse;
+}
+
+.inner {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  font-weight: 500;
+  color: var(--cream);
+  margin: 1.5rem 0 1rem;
+  line-height: 1.15;
+}
+.text {
+  font-size: 1.15rem;
+  color: rgba(250, 246, 240, 0.85);
+  margin-bottom: 0.8rem;
+}
+.subtext {
+  font-size: 1rem;
+  color: rgba(250, 246, 240, 0.65);
+  margin-bottom: 2.5rem;
+  max-width: 560px;
+  margin-inline: auto;
+}
+.footnote {
+  margin-top: 1.8rem;
+  font-size: 0.85rem;
+  color: rgba(250, 246, 240, 0.5);
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 500px) { .section { padding: 5rem 0; } }
