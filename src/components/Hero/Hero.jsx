@@ -42,7 +42,7 @@ export function Hero() {
 
         <div className={`${styles.photo} reveal`}>
           <div className={styles.photoFrame}>
-             <img   src={doctoraImg}        alt={doctora.nombre}  fetchPriority="high"  decoding="async"  />
+             <img   src={doctoraImg} alt={doctora.nombre}  fetchPriority="high"  decoding="async"width="800"   height="1201"  />
           </div>
           <div className={styles.blob} aria-hidden="true" />
           <div className={styles.badge}>

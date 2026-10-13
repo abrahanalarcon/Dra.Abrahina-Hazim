@@ -24,8 +24,8 @@ export function Navbar() {
             className={styles.brandMark}
             src={emblemaClaro}
             alt={doctora.nombre}
-            width="40"
-            height="58"
+            width="36"
+            height="52"
             decoding="async"
           />
           <span className={styles.logoText}>

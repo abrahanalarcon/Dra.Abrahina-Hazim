@@ -13,8 +13,8 @@ export function Footer() {
             className={styles.brandMark}
             src={emblemaOscuro}
             alt={doctora.nombre}
-            width="40"
-            height="58"
+            width="36"
+            height="52"
             loading="lazy"
             decoding="async"
           />
