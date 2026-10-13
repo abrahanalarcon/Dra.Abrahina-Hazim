@@ -1,5 +1,6 @@
 import { doctora } from '../../data/content';
 import styles from './Footer.module.css';
+import emblemaOscuro from '../../assets/emblema-oscuro.webp';
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -10,10 +11,12 @@ export function Footer() {
         <div className={styles.brand}>
           <img
             className={styles.brandMark}
-            src="/emblema-oscuro.png"
+            src={emblemaOscuro}
             alt={doctora.nombre}
             width="40"
             height="58"
+            loading="lazy"
+            decoding="async"
           />
           <div>
             <p className={styles.name}>{doctora.nombre}</p>

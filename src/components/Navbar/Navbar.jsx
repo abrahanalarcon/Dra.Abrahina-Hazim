@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { doctora, navLinks } from '../../data/content';
 import styles from './Navbar.module.css';
+import emblemaClaro from '../../assets/emblema-claro.webp';
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -21,10 +22,11 @@ export function Navbar() {
         <a href="#inicio" className={styles.logo}>
           <img
             className={styles.brandMark}
-            src="/emblema-claro.png"
+            src={emblemaClaro}
             alt={doctora.nombre}
             width="40"
             height="58"
+            decoding="async"
           />
           <span className={styles.logoText}>
             {doctora.nombreCorto}
