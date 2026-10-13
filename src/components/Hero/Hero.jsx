@@ -1,5 +1,6 @@
 import { doctora, trust } from '../../data/content';
 import styles from './Hero.module.css';
+import doctoraImg from '../../assets/doctora.webp';
 
 export function Hero() {
   return (
@@ -41,7 +42,7 @@ export function Hero() {
 
         <div className={`${styles.photo} reveal`}>
           <div className={styles.photoFrame}>
-            <img src="/doctora.jpg" alt={doctora.nombre} />
+             <img   src={doctoraImg}        alt={doctora.nombre}  fetchpriority="high"  decoding="async"  />
           </div>
           <div className={styles.blob} aria-hidden="true" />
           <div className={styles.badge}>
